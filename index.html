@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Fancy Calculator</title>
+</head>
+
+<body>
+    <script src="./index.js"></script>
+    <div class="body">
+        <div class="calculator">
+            <div class="textfield">
+                <h1 class="input" id="inp">0</h1>
+            </div>
+            <div class="keys">
+                <button onclick="send(7)">7</button>
+                <button onclick="send(8)">8</button>
+                <button onclick="send(9)">9</button>
+                <button class="op" onclick="sendop('/')">/</button>
+                <button onclick="send(4)">4</button>
+                <button onclick="send(5)">5</button>
+                <button onclick="send(6)">6</button>
+                <button class="op" onclick="sendop('*')">*</button>
+                <button onclick="send(1)">1</button>
+                <button onclick="send(2)">2</button>
+                <button onclick="send(3)">3</button>
+                <button class="op" onclick="sendop('-')">-</button>
+                <button class="bsp" onclick="bsp()">&lBarr;</button>
+                <button onclick="send(0)">0</button>
+                <button class="eq" onclick="cal()">=</button>
+                <button onclick="sendop('+')" class="op">+</button>
+                <button class="clr" onclick="clr()">AC</button>
+            </div>
+        </div>
+    </div>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+</body>
+
+</html>
